@@ -1,2 +1,148 @@
-ï»¿å¼•ç”¨ç”¨å•å¼•å· ''ï¼Œä¸ç„¶å®¹æ˜“å‡ºé”™ã€‚
-===:ç”¨æ¥åˆ¤æ–­æ•°æ®çš„ç±»å‹å¤§å°æ˜¯å¦ç›¸ç­‰ã€‚
+ÒıÓÃÓÃµ¥ÒıºÅ ''£¬²»È»ÈİÒ×³ö´í¡£
+===:ÓÃÀ´ÅĞ¶ÏÊı¾İµÄÀàĞÍ´óĞ¡ÊÇ·ñÏàµÈ¡£
+¶àÕÅÍ¼Æ¬Ê¹ÓÃ¶¶¶¯Ğ§¹ûµÄÊ±ºò£¬»á·¢ÉúÍ¼Æ¬¶¶¶¯µÄÊ±ºò»Ø²»µ½Ô­À´µÄÎ»ÖÃ£¬Ö÷ÒªÊÇÄã¼ÆÊ±Æ÷µÄÎÊÌâ£¬Èç¹û°Ñ¼ÆÊ±Æ÷ÉèÎªÄÚÖÃ¶ÔÏóµÄ»°£¬¾Í»áµ¥¸öÖ´ĞĞ»¥²»¸ÉÈÅ¡£ÄÇÑùµÄ»°£¬Êó±êÃ¿½øÈ¥Ò»´Î¾Í»áÓĞ¸öĞÂµÄ×ø±êÉú³ÉËùÒÔÍ¼Æ¬Î»ÖÃ¾Í»á¸Ä±ä£¬½â¾ö·½·¨¾ÍÊÇ°Ñ¼ÆÊ±Æ÷¸Ä³ÉÍ³Ò»µÄ£»´úÂëÈçÏÂ
+
+var origin = parseInt(getStyle(obj,attr));
+//´Ë´¦°Ñ	obj.shake = setInterval(function ĞŞ¸Ä³ÉÈçÏÂ£¬¾ÍÊÇ°Ñ¼ÆÊ±Æ÷¸Ä³ÉÍ³Ò»µÄ£¬
+    var shake = setInterval(function(){ 		
+//ÒòÎª°Ñ¶¨Ê±Æ÷¸Ä³ÉÁËÍ³Ò»£¬ËùÒÔÒªÔÚ¶¨Ê±Æ÷ÄÚÖØĞÂÌí¼ÓgetStyleº¯Êı¡£	
+		var pos = parseInt( getStyle(obj, attr) );
+        obj.style[attr] = origin + arr[num] + 'px';
+        num++;
+        if(num == arr.length){
+		//clearInterval( obj.shake );´Ë´¦ÎªÔ­ÏÈ´úÂë¡£
+            clearInterval(shake);
+            endFn && endFn();
+        }
+    },50)
+	var str = 'ÃîÎ¶¿ÎÌÃ-WWW.miaov.com';
+
+str.charAt(1);			// 'Î¶'
+str.charCodeAt(1);			// 21619
+String.fromCharCode(22937, 21619);	// 'ÃîÎ¶'
+
+str.indexOf('m', 4);			// 9
+str.lastIndexOf('o');			// 16
+
+'1000' < '2'			// true
+'1000' > 2			// true
+
+str.substring(0, 4);			// 'ÃîÎ¶¿ÎÌÃ'
+str.slice(-3);			// 'com'
+
+str.toUpperCase();			// 'ÃîÎ¶¿ÎÌÃ-WWW.MIAOV.COM'
+str.toLowerCase();			// 'ÃîÎ¶¿ÎÌÃ-www.miaov.com'
+
+str.split('.', 2);			// [ 'ÃîÎ¶¿ÎÌÃ-WWW', 'miaov' ] ×Ö·û´®·Ö¸î³ÉÒ»¸öÊı×é¡£ºóÃæµÄ²ÎÊı2±íÊ¾·Ö¸î³É¼¸¸öÔªËØ£¬¿ÉÒÔ²»Ğ´¡£
+µ«ÊÇÒª×¢ÒâµÄÊÇ¡® .¡¯Õâ¸öµã»áÏûÊ§£¬±»·Ö¸îÔªËØµÄ¶ººÅËù´úÌæ¡£³£ÓÃÀ´É¾³ıÔªËØ
+
+
+var arr = [ 'www', 'miaov', 'com' ];
+arr.join('aaa');			// 'www.miaov.com'
+
+var str = 'abcdef';
+ alert(str.split('').reverse().join(''));
+//Õâ¸öÊÇ°Ñ×Ö·û´®°´ÕÕ´Ó´óµ½Ğ¡µÄË³ĞòÅÅÁĞ£¬split('')µÄ×÷ÓÃÊÇ°Ñ×Ö·û´®±ä³ÉÊı×é£¨a,b,c,d,..£©È»ºóreverseµÄ×÷ÓÃÊÇ°ÑÊı×éµ¹×ÅÅÅ£¬joinµÄ×÷ÓÃÊÇ°ÑÊı×é±ä»Ø×Ö·û´®¡£
+
+splice() ·½·¨¿ÉÉ¾³ı´Ó index ´¦¿ªÊ¼µÄÁã¸ö»ò¶à¸öÔªËØ£¬²¢ÇÒÓÃ²ÎÊıÁĞ±íÖĞÉùÃ÷µÄÒ»¸ö»ò¶à¸öÖµÀ´Ìæ»»ÄÇĞ©±»É¾³ıµÄÔªËØ¡£
+Èç¹û´Ó arrayObject ÖĞÉ¾³ıÁËÔªËØ£¬Ôò·µ»ØµÄÊÇº¬ÓĞ±»É¾³ıµÄÔªËØµÄÊı×é¡£
+
+DOM
+createElement();createElement() ·½·¨¿É´´½¨ÔªËØ½Úµã
+parentNode:»ñÈ¡¸¸½Úµã
+appendChild(½Úµã)			×·¼ÓÒ»¸ö½Úµã ÀıÈçoLi.appendChild( oA );
+insertBefore(½Úµã, Ô­ÓĞ½Úµã)	ÔÚÒÑÓĞÔªËØÇ°²åÈë£ºoUl.insertBefore( oLi, oUl.children[0] );
+¾ÍÊÇ°ÑoLi·ÅÔÚÃ¿Ò»¸öoUlµÄ×Ó½ÚµãÖĞ£¬ÕâÑù¾Í³öÀ´ÁôÑÔ°åµÄĞ§¹û¡£
+/*
+				¸¸¼¶.removeChild(ÒªÉ¾³ıµÄÔªËØ); É¾³ıÔªËØ
+				ÓÃµ±Ç°aµÄ¸¸¼¶£¨aµÄ¸¸¼¶¾ÍÊÇli£© == this.parentNode£»
+				oUl.removeChild(this.parentNode);
+*/
+
+appendChild,insertBefore,replaceChild¶¼¿ÉÒÔ²Ù×÷¶¯Ì¬´´½¨³öÀ´µÄ½Úµã£¬Ò²¿ÉÒÔ²Ù×÷
+¸¸¼¶.replaceChild(ĞÂ½Úµã£¬±»Ìæ»»½Úµã) Ìæ»»×Ó½Úµã¡££ºdocument.body.replaceChild( oDiv, oP );°ÑoPÌæ»»³ÉoDiv
+
+window.open('http://www.baidu.com'); ÒªÊÇÌí¼ÓÍøÕ¾£¬°ÑÍøÕ¾Ãû³ÆĞ´È«£¬²»È»ÓÃclose¹Ø²»ÁË¡£
+
+document.documentElement.scrollTop || document.body.scrollTop;ÕâÊÇ½çÃæ¹ö¶¯ÌõµÄÖµ¡£Ò»¸ö±ê×¼£¬Ò»¸ö·Ç±ê×¼µÄÖµ¡£
+offsetHeight = ÄÚÈİ¿ÉÊÓÇøÓòµÄ¸ß¶È+ ¹ö¶¯Ìõ + ±ß¿ò¡£
+obj.offsetTop Ö¸ obj ¾àÀëÉÏ·½»òÉÏ²ã¿Ø¼şµÄÎ»ÖÃ offsetLeft »ñÈ¡µÄÊÇÏà¶ÔÓÚ¸¸¶ÔÏóµÄ×ó±ß¾à
+
+scrollTop() ·½·¨·µ»Ø»òÉèÖÃÆ¥ÅäÔªËØµÄ¹ö¶¯ÌõµÄ´¹Ö±Î»ÖÃ¡£
+/*
+event : ÊÂ¼ş¶ÔÏó , µ±Ò»¸öÊÂ¼ş·¢ÉúµÄÊ±ºò£¬ºÍµ±Ç°Õâ¸ö¶ÔÏó·¢ÉúµÄÕâ¸öÊÂ¼şÓĞ¹ØµÄÒ»Ğ©ÏêÏ¸µÄĞÅÏ¢¶¼»á±»ÁÙÊ±±£´æµ½Ò»¸öÖ¸¶¨µØ·½-event¶ÔÏó£¬¹©ÎÒÃÇÔÚĞèÒªµÄµ÷ÓÃ¡£·É»ú-ºÚÏ»×Ó
+
+ÊÂ¼ş¶ÔÏó±ØĞëÔÚÒ»¸öÊÂ¼şµ÷ÓÃµÄº¯ÊıÀïÃæÊ¹ÓÃ²ÅÓĞÄÚÈİ
+ÊÂ¼şº¯Êı£ºÊÂ¼şµ÷ÓÃµÄº¯Êı£¬Ò»¸öº¯ÊıÊÇ²»ÊÇÊÂ¼şº¯Êı£¬²»ÔÚ¶¨ÒåµÄ¾ö¶¨£¬¶øÊÇÈ¡¾öÓÚÕâ¸öµ÷ÓÃµÄÊ±ºò
+
+¼æÈİ
+ie/chrome : eventÊÇÒ»¸öÄÚÖÃÈ«¾Ö¶ÔÏó
+±ê×¼ÏÂ : ÊÂ¼ş¶ÔÏóÊÇÍ¨¹ıÊÂ¼şº¯ÊıµÄµÚÒ»¸ö²ÎÊı´«Èë
+
+Èç¹ûÒ»¸öº¯ÊıÊÇ±»ÊÂ¼şµ÷ÓÃµÄÄÇÃ´£¬Õâ¸öº¯Êı¶¨ÒåµÄµÚÒ»¸ö²ÎÊı¾ÍÊÇÊÂ¼ş¶ÔÏó
+
+clientX[Y] : µ±Ò»¸öÊÂ¼ş·¢ÉúµÄÊ±ºò£¬Êó±êµ½Ò³Ãæ¿ÉÊÓÇøµÄ¾àÀë    ¼Ç×Å£¬XYÊÇ´óĞ´£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+*/
+ev.cancelBubble = true;//×èÖ¹µ±Ç°¶ÔÏóµÄµ±Ç°ÊÂ¼şµÄÃ°Åİ
+²Ù×÷ÔªËØÊôĞÔµÄµÚÈıÖÖ·½Ê½¡£
+»ñÈ¡£ºgetAttribute(Ãû³Æ)
+ÉèÖÃ£ºsetAttribute(Ãû³Æ, Öµ)
+É¾³ı£ºremoveAttribute(Ãû³Æ)
+
+addEventListener ;Õâ¸öº¯ÊıµÄtrueºÍfalse¾ÍÏñÁ¦´©Í¸×©Í·Ò»Ñù£¬true(²¶»ñ)´ú±íÏòÏÂµÄÁ¦·¢ÉúµÄÊ±ºòÖ´ĞĞfn.
+false£¨Ã°Åİ£©´ú±íÏòÉÏµÄÁ¦·¢ÉúµÄÊ±ºòÖ´ĞĞfn.
+//¸æËßdiv1£¬Èç¹ûÓĞÒ»¸ö³öÈ¥µÄÊÂ¼ş´¥·¢ÁËÄã£¬Äã¾ÍÈ¥Ö´ĞĞfn1Õâ¸öº¯Êı
+//¸æËßdiv1£¬Èç¹ûÓĞÒ»¸ö³öÈ¥µÄÊÂ¼ş´¥·¢ÁËÄã£¬Äã¾ÍÈ¥Ö´ĞĞfn1Õâ¸öº¯Êı
+	/*oDiv1.addEventListener('click', fn1, false);
+	
+//¸æËßdiv1£¬Èç¹ûÓĞÒ»¸ö½øÈ¥µÄÊÂ¼ş´¥·¢ÁËÄã£¬Äã¾ÍÈ¥Ö´ĞĞfn1Õâ¸öº¯Êı
+	/*oDiv1.addEventListener('click', fn1, true);	
+	ÊÂ¼şµÄ³·Ïú; removeEventListener('click', fn1, true);
+/*document.addEventListener('contextmenu', function(ev) {
+		
+		ev.preventDefault();
+		//return false;
+	});*//Õâ¸ö¾ÍÊÇËµÈç¹ûÊÂ¼şÊ¹ÓÃddEventListener°ó¶¨£¬ÄÇÃ´¾Í²»ÄÜÊ¹ÓÃreturn false À´½â³ı°ó¶¨¡£µÃÊ¹ÓÃÊÂ¼şÖĞµÄev.preventDefault();
+	
+	
+	/*
+	ie/chrome : onmousewheel
+		event.wheelDelta
+			ÉÏ£º120
+			ÏÂ£º-120
+		
+	firefox : DOMMouseScroll ±ØĞëÓÃaddEventListener
+		event.detail
+			ÉÏ£º-3
+			ÏÂ£º3
+			
+	return false×èÖ¹µÄÊÇ  obj.onÊÂ¼şÃû³Æ=fn Ëù´¥·¢µÄÄ¬ÈÏĞĞÎª
+	addEventListener°ó¶¨µÄÊÂ¼şĞèÒªÍ¨¹ıeventÏÂÃæµÄpreventDefault()
+	¹öÂÖµÄ´úÂë
+/*document.cookie = 'username=leo;expires=' + oDate.toGMTString(); cooki
+
+ÃæÏò¶ÔÏóÆª
+ÕâÊÇºÜÖØÒªµÄÒ»µã£¬±à³ÌÊ±Îñ±ØÒª×ñÊØ¡£ÏÂÎÄ¶¼×ñÑ­ÕâÒ»µã£¬¼´Èç¹ûÌæ»»ÁËprototype¶ÔÏó£¬
+
+    ¡¡¡¡o.prototype = {};
+
+ÄÇÃ´£¬ÏÂÒ»²½±ØÈ»ÊÇÎªĞÂµÄprototype¶ÔÏó¼ÓÉÏconstructorÊôĞÔ£¬²¢½«Õâ¸öÊôĞÔÖ¸»ØÔ­À´µÄ¹¹Ôìº¯Êı¡£
+
+    ¡¡¡¡o.prototype.constructor = o;
+ÏêÏ¸µÄÃæÏò¶ÔÏó¿ÉÒÔ²Î¿¼Õâ¸öÍøÒ³ http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
