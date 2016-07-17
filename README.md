@@ -1,36 +1,34 @@
 <<<<<<< HEAD
-# About
-
-This is my blog based on jekyll. And I change the style and interactive. If you want to use this model of the blog. **Please give a star at this repository**. Then you can clone it as your blog model.
-
-You can visit [here](http://gaohaoyang.github.io) to see this blog.
-
----
-
-这是我的博客，基于 jekyll。我改了所有默认的样式和交互。如果你想使用这个博客模板。**请先在这个仓库上点个star吧**，这也是对我的肯定和鼓励，谢谢了。然后你可以克隆这个仓库用作你自己的博客。
-
-博客访问地址：[点击这里](http://gaohaoyang.github.io)
-
-**使用时请注明模板来源:  Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
-
-<!--
-
-## 被引用信息
-
-使用了我的模板并写明来源的人：   
-
-* [dreamholy](http://dreamholy.github.io/)
-
-没有注明来源的人：
-
-* [yangshuailing](http://yangshuailing.github.io/com/)
-* [huapu728](http://huapu728.github.io/)
-* [greatbuger](http://greatbuger.github.io/) 
-
-
--->
-
-
-=======
-# 463755120.github.io
+# web前端开发
+##个人信息
+<ul>
+		<li>王志刚/男/1993/应届毕业生</li>
+		<li>宝鸡文理学院 电子电气工程系 自动化专业</li>
+		<li>期望职位：WEB前端开发实习</li>
+		<li>期望城市：不限/倾向于北京、杭州</li>
+</ul>
+##个人技能
+<ol>
+		<li>熟悉HTML5、CSS布局，使用JS交互  <a href="https://github.com/463755120/463755120.github.io/tree/master/%E5%B0%8F%E9%A1%B9%E7%9B%AE">作品</a></li>
+		<li>熟悉常用 JS 库 JQuery； AJAX 请求后台数据；</li>
+		<li>电商网站首页:利用html,css JavaScript(jQuery) 构造搭建的电子商务网站首页</li>
+		<li>仿jQuery写的一个vQuery的库.可以模拟实现jQuery中的DOM选择,css样式添加修改取值。事件的添加,
+链式操作等。</li>
+</ol>
+## 自我评价	
+自学web前端：热爱互联网行业，自学能力强，前端技能全面<br>
+喜欢团队合作,抗压能力强.<br>
+喜欢解决遇到的技术难题<br>
+体察用户需求，能够与产品经理良好合作。<br>
+敢于冒险，敢于挑战新事物。<br>
+##联系方式
+邮箱：463755120@qq.com
+##感谢
+感谢您的阅读，势单力薄,但有什么可以帮到您么?
+<br><br><br>
+##为什么入坑
+进入大学后,开始学习C语言,自动化专业有延伸单片机嵌入式等,大二开始学习单片机,喜欢上了写代码.到大三开始接触嵌入式,学习到大三下半年发现自己虽然喜欢写代码,但是不喜欢嵌入式.在舍友(感谢我的舍友乔巴小鹿)的推荐下开始学习前端,爱上了前端,炫酷的网页特效,有了很大的自信和成就感,这是写嵌入式时没有的感觉.学的越多,发现自己会的越少,前端的各款框架各种库.<br>
+我不怕麻烦和问题,就害怕自己碌碌无为,没有目标的毕业回那个小县城.我就是天生的不安分,喜欢留在可以实现自己梦想的地方.<br>
+##好辛苦啊,您都看到这里了，看来我们三观一致，相性符合，不如……
+##给我个机会,万一我就是您要找到员工呢。
 >>>>>>> parent of 0defb70... Revert "Initial commit"
